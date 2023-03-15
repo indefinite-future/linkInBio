@@ -9,16 +9,28 @@ html {
 body {
   background: url(./components/356319.jpg) no-repeat center center fixed;
   background-size: cover;
-  max-width: 100%;
-  max-height: 100%;
+}
+
+@media (max-width: 1284px) {
+  body {
+    background: url(./components/356319.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: 53% center; /* Shift 60% to the right */
+  }
 }
 
 main {
   position: relative;
 }
 
+main.animated {
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+}
+
 header {
-  margin-top: 3em;
+  margin-top: 5em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -51,7 +63,7 @@ ul {
   list-style: none;
   margin: 0 auto;
   padding: 2em;
-  max-width: 480px;
+  max-width: 360px;
 }
 
 ul > li {
