@@ -15,7 +15,7 @@ body {
   body {
     background: url(./components/356319.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-position: 53% center; /* Shift 60% to the right */
+    background-position: 53% center;
   }
 }
 
